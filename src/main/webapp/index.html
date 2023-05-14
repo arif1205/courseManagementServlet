@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home page</title>
+		<!-- css animator -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<!-- tailwind with config  -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primary: "#6339dc",
+						},
+					},
+				},
+			};
+		</script>
+		<!-- custom css  -->
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+	</head>
+	<body>
+		<!-- banner  -->
+		<header>
+			<!-- nav bar  -->
+			<nav
+				class="w-full bg-white px-[70px] py-[15px] flex justify-between items-center shadow-md"
+			>
+				<!-- left side  -->
+				<div class="left-nav logo cursor-pointer">
+					<a href="/courseManagement">
+						<p class="text-primary text-[32px]">
+							<span class="text-white bg-primary px-2">Adu-vai</span>
+							Programming course
+						</p>
+					</a>
+				</div>
+
+				<!-- right side  -->
+				<div class="right-nav links">
+					<a href="/courseManagement/login">
+						<button
+							class="text-uppercase text-white bg-primary px-5 py-1 rounded-sm cursor-pointer"
+						>
+							sign in
+						</button>
+					</a>
+				</div>
+			</nav>
+
+			<!-- banner -->
+			<section
+				id="banner"
+				class="min-h-[90vh] bg-primary w-full relative overflow-hidden"
+			>
+				<!-- setting image  -->
+				<div class="banner-image absolute bottom-0 right-0 w-[35%]">
+					<img src="./assets/images/aManThinking.png" alt="a man thinking" />
+				</div>
+
+				<!-- banner content  -->
+				<div
+					class="banner-content pt-[150px] pl-[130px] max-w-full w-[590px] relative z-10"
+				>
+					<h1
+						class="title text-white text-[50px] font-medium leading-[60px] mb-8 css-typing"
+					>
+						<span class="font-bold">Adu-vai</span> premium programming course
+					</h1>
+					<p class="desc text-white leading-[20px] mb-8">
+						Embark on an exciting coding journey with our immersive programming
+						course. Master in-demand languages, sharpen your problem-solving
+						skills, and unleash your creativity through hands-on projects.
+						Elevate your career prospects and join our vibrant community of
+						aspiring developers. Whether you're a beginner or looking to level
+						up, our expert instructors and interactive learning modules will
+						guide you every step of the way.
+					</p>
+					<a href="/courseManagement/login">
+						<button
+							class="text-primary bg-white px-[20px] py-[12px] rounded-md font-bold"
+						>
+							Get started now
+						</button></a
+					>
+				</div>
+
+				<!-- lower circle design -->
+				<div
+					class="absolute -bottom-[120px] left-[20%] h-60 w-60 rounded-full bg-white"
+				></div>
+			</section>
+		</header>
+
+		<!-- our vision section -->
+		<section
+			id="vision "
+			class="relative w-full bg-slate-200 py-[120px] overflow-hidden"
+		>
+			<!-- upper circle design -->
+			<div
+				class="absolute top-[120px] right-[6%] h-52 w-52 rounded-full bg-primary animate__animated animate__jello animate__infinite"
+			></div>
+			<div class="flex items-center relative z-10">
+				<!-- image side  -->
+				<div class="grow animate-img">
+					<img
+						class="max-w-full"
+						src="./assets/images/aManLookingForSomething.png"
+						alt="a man looking for something"
+					/>
+				</div>
+				<!-- content side  -->
+				<div class="grow basis-[50%]">
+					<h1 class="text-center font-bold text-[60px] px-4 mb-8 font-jockey">
+						<span class="text-primary">O</span>ur
+						<span class="text-primary">V</span>ision
+					</h1>
+					<p class="w-full px-16 text-slate-700">
+						<span class="block mb-8">
+							At our core, we envision a world where programming knowledge is
+							accessible to all. We strive to empower individuals from diverse
+							backgrounds to embrace the art of coding, fostering a community of
+							lifelong learners. Our vision is to inspire innovation, drive
+							technological advancements, and shape the future through
+							education. By providing top-notch programming courses and
+							cultivating a supportive environment, we aim to unleash the
+							potential of every aspiring developer, enabling them to turn their
+							dreams into reality. Join us in this transformative journey, and
+							together, let's redefine what's possible in the realm of
+							programming.
+						</span>
+						<a href="/courseManagement/login">
+							<button
+								class="text-white bg-primary px-[20px] py-[12px] rounded-md font-bold"
+							>
+								Want to start with us?
+							</button></a
+						>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer section  -->
+		<footer class="bg-primary text-white p-8 text-center text-xl font-medium">
+			<p>All &copy; copyright reserve to adu-vai</p>
+		</footer>
+	</body>
+</html>
